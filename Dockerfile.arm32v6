@@ -1,0 +1,5 @@
+FROM alpine:arm32v6
+
+RUN apk add --no-cache curl
+
+ENTRYPOINT ["/usr/bin/curl"]
